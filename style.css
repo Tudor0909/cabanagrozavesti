@@ -1254,7 +1254,12 @@ section[id] {
 .row-inputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.row-inputs .input-group {
+  margin-bottom: 0;
 }
 
 /* Submit button - red gradient */
@@ -1647,6 +1652,19 @@ footer p {
 
   .watermark {
     font-size: 10rem;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    height: 54px;
+    width: 54px;
+    padding: 0 10px;
+  }
+
+  .whatsapp-float i {
+    font-size: 30px;
+    min-width: 30px;
   }
 }
 
