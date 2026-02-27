@@ -267,7 +267,7 @@ class LaConstantaApp {
                     });
 
                     if (response.ok) {
-                        showStatus("Mesajul a fost trimis cu succes. Vă vom contacta curând!", false);
+                        showStatus("Solicitarea a fost trimisă cu succes. Vă vom contacta curând!", false);
                         bookingForm.reset();
                     } else {
                         showStatus("A apărut o problemă. Vă rugăm să încercați din nou.", true);
