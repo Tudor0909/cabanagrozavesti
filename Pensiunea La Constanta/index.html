@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa La Constanța | Refugiul Tău în Natură</title>
+    <meta name="description"
+        content="Descoperă un refugiu montan autentic, unde liniștea pădurii întâlnește confortul modern. Casa La Constanța este locul ideal pentru o experiență de neuitat.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Casa La Constanța">
+    <meta property="og:description"
+        content="Descoperă un refugiu montan autentic, unde liniștea pădurii întâlnește confortul modern. Casa La Constanța este locul ideal pentru o experiență de neuitat.">
+    <meta property="og:url" content="https://casalaconstanta.ro/">
+    <meta property="og:image" content="imagini/balcon-vedere-munte-pensiunea-la-constanta.jpeg">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="imagini/logo-casa-la-constanta.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Professional minimal logo: A-frame chalet + pine -->
+            <a href="#acasa" class="logo" aria-label="Acasă - Casa La Constanța">
+                <svg class="logo-icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="chalet-gold" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#E5C158" />
+                            <stop offset="50%" stop-color="#D4AF37" />
+                            <stop offset="100%" stop-color="#AA7C11" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Prominent, Stylized Mountains (Ceahlau) -->
+                    <!-- Taller, sharper peaks, more visible -->
+                    <path d="M 5 70 L 35 25 L 55 55 L 85 15 L 115 70" stroke="url(#chalet-gold)" stroke-width="4"
+                        stroke-linejoin="round" opacity="0.6" />
+                    <path d="M 35 25 L 35 55 M 85 15 L 85 55" stroke="url(#chalet-gold)" stroke-width="2"
+                        opacity="0.4" />
+
+                    <!-- Solid Background Blocker for House -->
+                    <path d="M 32 90 L 32 50 L 60 20 L 88 50 L 88 90 Z" fill="#1A2E1E" stroke="none" />
+
+                    <!-- The Casa La Constanta Silhouette - Minimalist & Geometric -->
+
+                    <!-- Main Roof & Outline -->
+                    <path d="M 24 54 L 60 20 L 96 54" stroke="url(#chalet-gold)" stroke-width="5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M 35 90 L 35 48 M 85 90 L 85 48" stroke="url(#chalet-gold)" stroke-width="4"
+                        stroke-linecap="round" />
+
+                    <!-- Abstracted Balcony Lines (Negative Space / Geometric) -->
+                    <line x1="28" y1="52" x2="92" y2="52" stroke="url(#chalet-gold)" stroke-width="2"
+                        stroke-linecap="round" />
+
+                    <rect x="42" y="65" width="36" height="8" fill="url(#chalet-gold)" stroke="none" rx="2" />
+                    <!-- Twin Balcony "Cutouts" to create the twin look visually -->
+                    <rect x="56" y="65" width="8" height="8" fill="#1A2E1E" stroke="none" />
+
+                    <!-- Minimal Triangle Window -->
+                    <polygon points="60,32 54,40 66,40" fill="url(#chalet-gold)" stroke="none" />
+
+                    <!-- Bold Foundation/Ground Line integrating the house -->
+                    <path d="M 15 90 L 105 90" stroke="url(#chalet-gold)" stroke-width="4" stroke-linecap="round" />
+                    <!-- Solid Ground Block matching the width exactly -->
+                    <rect x="35" y="86" width="50" height="4" fill="url(#chalet-gold)" stroke="none" />
+
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-top">Casa</span>
+                    <span class="logo-bottom">La Constanța</span>
+                </div>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#poveste">Despre</a></li>
+                    <li><a href="#experienta">Facilități</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#reguli">Info</a></li>
+                    <li><a href="#contact" class="btn-nav">Rezervă</a></li>
+                </ul>
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/share/1H9DWUDJz4/" target="_blank" aria-label="Pagină Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pensiunealaconstanta" target="_blank"
+                        aria-label="Pagină Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="hamburger" aria-label="Meniu Navigare" role="button" tabindex="0"><i
+                        class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="acasa" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal-up">
+            <span class="hero-eyebrow">Grozăvești, Neamț</span>
+            <h1>Casa La <em>Constanța</em></h1>
+            <p>Cabană completă | Liniște și Priveliște absolută</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Verifică Disponibilitatea</a>
+            </div>
+        </div>
+        <div class="scroll-cue">Descoperă</div>
+    </header>
+
+    <section id="poveste" class="section bg-smoke">
+        <div class="watermark" style="top:-10%; right:-5%;">&#9652;</div>
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-image reveal-left">
+                    <div class="img-wrapper">
+                        <img src="imagini/exterior-cazare-pensiunea-la-constanta.jpeg" alt="Exterior Casa La Constanța"
+                            class="shadow-img">
+                    </div>
+                    <div class="badge-float">
+                        <span>Exclusiv</span>
+                        <small>Închiriere Integrală</small>
+                    </div>
+                </div>
+                <div class="split-content reveal-right">
+                    <span class="subtitle">Povestea Noastră</span>
+                    <h2 class="section-title">Bine ați venit la<br>Casa La Constanța</h2>
+                    <p class="lead">Descoperă un refugiu montan autentic, unde liniștea pădurii întâlnește confortul
+                        modern. Am creat acest spațiu pentru a fi departe de agitația orașului și pentru a admira o
+                        priveliște care îți va tăia răsuflarea.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <i class="fas fa-bed"></i>
+                            <strong>5</strong>
+                            <span>Dormitoare</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-bath"></i>
+                            <strong>5</strong>
+                            <span>Băi</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <strong>14</strong>
+                            <span>Persoane (Capacitate)</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-plus-circle"></i>
+                            <strong>1</strong>
+                            <span>Persoană (Pat Extra)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experienta" class="section bg-cream">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="subtitle">Confort Absolut</span>
+                <h2 class="section-title">Facilități</h2>
+                <div class="separator"><span class="sep-leaf"></span></div>
+            </div>
+
+            <div class="facilities-wrapper reveal-up">
+                <div class="features-list">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-car"></i></div>
+                        <div class="feature-text">
+                            <h4>Parcare privată</h4>
+                            <p>Spațiu generos și sigur pentru mașina ta pe tot parcursul sejurului.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-child"></i></div>
+                        <div class="feature-text">
+                            <h4>Loc de joacă copii</h4>
+                            <p>Spațiu dedicat pentru cei mici, sigur, împrejmuit și distractiv.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+                        <div class="feature-text">
+                            <h4>Wi-Fi de mare viteză</h4>
+                            <p>Conexiune excelentă pentru a rămâne conectat la nevoie oriunde.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tv"></i></div>
+                        <div class="feature-text">
+                            <h4>Smart TV &amp; Media</h4>
+                            <p>Ecrane Smart în Living și în toate dormitoarele pentru seri relaxante.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="feature-text">
+                            <h4>Bucătărie utilată</h4>
+                            <p>Spațiu modern cu absolut toate dotările și aparatura necesară.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-fire"></i></div>
+                        <div class="feature-text">
+                            <h4>Zonă de grătar</h4>
+                            <p>Spațiu exterior amenajat perfect pentru mâncăruri fine în natură.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section bg-smoke">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="subtitle">Privire vizuală</span>
+                <h2 class="section-title">Galerie Foto</h2>
+                <p class="lead" style="margin:0 auto 0; text-align:center;">Imagini reale de la Casa La Constanța</p>
+                <div class="separator"><span class="sep-leaf"></span></div>
+            </div>
+
+            <div class="gallery-grid reveal-up">
+                <div class="gallery-item">
+                    <img src="imagini/vedere-panoramica-muntii-ceahlau-pensiune.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Exterior panoramă vedere munte La Constanța">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/living-spatios-pensiunea-la-constanta.jpg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Living spațios Pensiunea La Constanța">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/foisor-cazare-grozavesti-pensiunea-la-constanta.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Foișor curte Pensiunea La Constanța Neamț">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/camera-dormitor-4-pensiunea-la-constanta.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Dormitor matrimonial Casa La Constanța">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/gratar-exterior-pensiunea-la-constanta.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Zonă grătar și terasă exterioară">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/curte-joaca-relaxare-pensiunea-la-constanta.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Curte verde și loc de joacă">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/grill-pensiunea-la-constanta-grozavesti.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Zonă de grill">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/leagan-relaxare-pensiunea-la-constanta.JPG" loading="lazy"
+                        onclick="openLightbox(this)" alt="Leagăn din lemn curte">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagini/bucatarie-utilata-pensiunea-la-constanta.jpeg" loading="lazy"
+                        onclick="openLightbox(this)" alt="Bucătărie complet utilată pensiune">
+                    <div class="gallery-overlay" onclick="this.previousElementSibling.click()">
+                        <div class="expand-ring"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <span>Vezi Foto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reguli" class="section bg-smoke">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="subtitle">De Știut</span>
+                <h2 class="section-title">Informații &amp; Reguli</h2>
+                <div class="separator"><span class="sep-leaf"></span></div>
+            </div>
+
+            <div class="rules-grid reveal-up">
+                <div class="rule-box">
+                    <i class="far fa-clock"></i>
+                    <h4>Program</h4>
+                    <p>Check-in: după ora 14:00.<br>Check-out: până la ora 14:00.</p>
+                </div>
+                <div class="rule-box">
+                    <i class="fas fa-paw"></i>
+                    <h4>Animale</h4>
+                    <p>Pentru a menține igiena perfectă, accesul animalelor nu este permis.</p>
+                </div>
+                <div class="rule-box">
+                    <i class="fas fa-music"></i>
+                    <h4>Intimitate &amp; Petreceri</h4>
+                    <p>Vă bucurați de intimitate totală. Petrecerile restrânse sunt binevenite.</p>
+                </div>
+                <div class="rule-box">
+                    <i class="fas fa-smoking-ban"></i>
+                    <h4>Fumatul</h4>
+                    <p>Strict interzis în interior. Amenajat doar pe terasele exterioare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-cream contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info reveal-left">
+                    <span class="subtitle">Planifică Sejurul</span>
+                    <h2 class="section-title">Contact &amp; Rezervări</h2>
+                    <p class="lead contact-desc">Suntem la dispoziția
+                        dumneavoastră prin formularul de rezervare, telefonic sau rapid, apăsând <strong>butonul de
+                            WhatsApp</strong>. Pentru confirmarea rezervării se solicită un avans de 20%.</p>
+
+                    <div class="contact-row">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefon</strong>
+                            <a href="tel:0766409277">0766 409 277</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:pensiunealaconstanta@gmail.com">pensiunealaconstanta@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adresă</strong>
+                            <a href="https://maps.google.com/?q=Casa+La+Constanta,+Grozavesti,+Neamt"
+                                target="_blank">Grozăvești 617243, Jud. Neamț</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal-right">
+                    <form id="booking-form" action="https://formspree.io/f/xjgbevyo" method="POST">
+                        <h3 class="form-title">Trimite o solicitare</h3>
+                        <!-- Securitate Anti-Spam (Honeypot pt Formspree) -->
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="false">
+
+                        <div class="input-group">
+                            <input type="text" id="nume" name="name" required placeholder=" "
+                                pattern="^[A-Za-zĂăÂâÎîȘșȚț \-]+$" title="Introduceți doar litere"
+                                oninput="this.value = this.value.replace(/[^A-Za-zĂăÂâÎîȘșȚț \-]/g, '');">
+                            <label for="nume">Nume Complet</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="tel" id="telefon" name="phone" pattern="^(?:\+40|0)[0-9\s\-]{8,12}$" required
+                                title="Introduceți un număr valid din România (ex: 0712 345 678)" placeholder=" "
+                                maxlength="15" oninput="this.value = this.value.replace(/[^0-9+\s-]/g, '');">
+                            <label for="telefon">Număr Telefon</label>
+                        </div>
+
+                        <div class="row-inputs">
+                            <div class="input-group">
+                                <input type="date" id="checkin" name="checkin" required placeholder=" "
+                                    onkeydown="return false;" onclick="if(this.showPicker) this.showPicker();">
+                                <label for="checkin">Data Sosirii</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="date" id="checkout" name="checkout" required placeholder=" "
+                                    onkeydown="return false;" onclick="if(this.showPicker) this.showPicker();">
+                                <label for="checkout">Data Plecării</label>
+                            </div>
+                        </div>
+
+                        <div class="row-inputs">
+                            <div class="input-group">
+                                <input type="number" id="oaspeti" name="guests" placeholder=" " min="1" max="14"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, ''); if(this.value > 14) this.value = 14;">
+                                <label for="oaspeti">Număr Persoane (Max 14)</label>
+                            </div>
+                            <div class="input-group">
+                                <select id="pat_extra" name="extra_bed">
+                                    <option value="Nu">Nu necesită</option>
+                                    <option value="Da">Da (+1 persoană)</option>
+                                </select>
+                                <label for="pat_extra">Pat Suplimentar?</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="mesaj" name="message" rows="2" placeholder=" "></textarea>
+                            <label for="mesaj">Alte detalii sau preferințe (Opțional)</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width" style="margin-top: 20px;">Trimite
+                            Solicitarea</button>
+                        <div id="form-status"
+                            style="display: none; margin-top: 15px; padding: 10px; border-radius: 4px; text-align: center; font-weight: bold; font-size: 0.9rem;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="location-split">
+        <div class="map-side">
+            <iframe
+                src="https://maps.google.com/maps?q=Pensiunea%20La%20Constanta,%20Grozavesti,%20Neamt&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="activities-side">
+            <h3 class="act-title">Lângă Noi</h3>
+            <p class="act-subtitle">Explorați minunățiile locale din apropiere</p>
+
+            <div class="act-list">
+                <a href="https://www.google.com/search?q=Lacul+Bicaz+Izvorul+Muntelui" target="_blank"
+                    class="act-item reveal-right" style="text-decoration: none;">
+                    <i class="fas fa-water"></i>
+                    <div>
+                        <strong>Lacul Bicaz (Izvorul Muntelui)</strong>
+                        <p>Plimbări cu vaporașul, caiac sau pescuit la doar câțiva pași de peisajele de cleștar.</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Masivul+Ceahlau+Parcul+National" target="_blank"
+                    class="act-item reveal-right" style="transition-delay: 0.1s; text-decoration: none;">
+                    <i class="fas fa-mountain"></i>
+                    <div>
+                        <strong>Masivul Ceahlău (Toaca)</strong>
+                        <p>Trasee montane spectaculoase către vârf și superba Cascadă Duruitoarea.</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Cheile+Bicazului" target="_blank" class="act-item reveal-right"
+                    style="transition-delay: 0.15s; text-decoration: none;">
+                    <i class="fas fa-road"></i>
+                    <div>
+                        <strong>Cheile Bicazului</strong>
+                        <p>Unul dintre cele mai impresionante și emblematice drumuri montane din România.</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Lacul+Rosu" target="_blank" class="act-item reveal-right"
+                    style="transition-delay: 0.2s; text-decoration: none;">
+                    <i class="fas fa-tree"></i>
+                    <div>
+                        <strong>Lacul Roșu</strong>
+                        <p>Un lac unic, de baraj natural, cu trunchiuri de copaci ieșind din apă ca un peisaj de basm.
+                        </p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Manastirea+Petru+Voda+Neamt" target="_blank"
+                    class="act-item reveal-right" style="transition-delay: 0.25s; text-decoration: none;">
+                    <i class="fas fa-church"></i>
+                    <div>
+                        <strong>Mănăstirea Petru Vodă</strong>
+                        <p>O oază de liniște spirituală pitită chiar în inima verde a munților Neamțului.</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Cetatea+Neamtului" target="_blank"
+                    class="act-item reveal-right" style="transition-delay: 0.3s; text-decoration: none;">
+                    <i class="fab fa-fort-awesome"></i>
+                    <div>
+                        <strong>Cetatea Neamțului</strong>
+                        <p>Fortăreață medievală impunătoare și un veritabil simbol istoric mușatin.</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Barajul+Bicaz" target="_blank" class="act-item reveal-right"
+                    style="transition-delay: 0.35s; text-decoration: none;">
+                    <i class="fas fa-bridge-water"></i>
+                    <div>
+                        <strong>Baraj Bicaz</strong>
+                        <p>Colosul imens de beton care stăvilește apele formând minunata "Mare a Neamțului".</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search?q=Statiunea+Durau" target="_blank" class="act-item reveal-right"
+                    style="transition-delay: 0.4s; text-decoration: none;">
+                    <i class="fas fa-campground"></i>
+                    <div>
+                        <strong>Stațiunea Durău</strong>
+                        <p>Bază de odihnă și punctul perfect de plecare în explorarea Masivului Ceahlău.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>© 2026 Casa La Constanța. Toate drepturile rezervate pentru o experiență de excelență.</p>
+        </div>
+    </footer>
+
+    <!-- Buton Flotant WhatsApp Premium -->
+    <a href="https://wa.me/40766409277" class="whatsapp-float" target="_blank" aria-label="Contactați-ne pe WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat pe WhatsApp</span>
+    </a>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" aria-label="Închide Galeria Foto" role="button" tabindex="0">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Zoomed image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
