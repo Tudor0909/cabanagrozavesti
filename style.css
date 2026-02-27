@@ -1519,10 +1519,8 @@ footer p {
     grid-row: span 1;
   }
 
-  .gallery-item:nth-child(1) {
-    grid-column: span 12;
-  }
-
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(8),
   .gallery-item:nth-child(9) {
     grid-column: span 12;
   }
