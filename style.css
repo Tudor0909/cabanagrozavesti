@@ -1659,12 +1659,14 @@ footer p {
     right: 20px;
     height: 54px;
     width: 54px;
-    padding: 0 10px;
+    padding: 0;
+    justify-content: center;
   }
 
   .whatsapp-float i {
-    font-size: 30px;
-    min-width: 30px;
+    font-size: 34px;
+    min-width: unset;
+    margin: 0;
   }
 }
 
