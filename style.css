@@ -1680,7 +1680,7 @@ footer p {
     transform: none !important;
   }
 
-  /* Complete Overrides for Touch Devices */
+  /* Complete Overrides for Touch Devices - HARDCODED VALUES */
   a.btn-primary:active,
   a.btn-primary:focus,
   a.btn-primary:hover,
@@ -1690,12 +1690,12 @@ footer p {
   .contact-form-card .btn-primary:active,
   .contact-form-card .btn-primary:focus,
   .contact-form-card .btn-primary:hover {
-    background: var(--gradient-red) !important;
-    background-color: var(--gradient-red) !important;
-    background-image: var(--gradient-red) !important;
+    background: linear-gradient(135deg, #941b1b 0%, #b82828 100%) !important;
+    background-color: #941b1b !important;
+    background-image: linear-gradient(135deg, #941b1b 0%, #b82828 100%) !important;
     box-shadow: 0 6px 24px rgba(139, 30, 30, 0.3) !important;
     transform: none !important;
-    color: var(--white) !important;
+    color: #ffffff !important;
     transition: none !important;
     animation: none !important;
   }
