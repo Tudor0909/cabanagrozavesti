@@ -1680,23 +1680,30 @@ footer p {
     transform: none !important;
   }
 
-  .btn-primary,
-  .contact-form-card .btn-primary {
-    transition: none !important;
-    -webkit-tap-highlight-color: transparent !important;
-  }
-
-  .btn-primary:active,
-  .btn-primary:focus,
-  .btn-primary:hover,
+  /* Complete Overrides for Touch Devices */
+  a.btn-primary:active,
+  a.btn-primary:focus,
+  a.btn-primary:hover,
+  button.btn-primary:active,
+  button.btn-primary:focus,
+  button.btn-primary:hover,
   .contact-form-card .btn-primary:active,
   .contact-form-card .btn-primary:focus,
   .contact-form-card .btn-primary:hover {
     background: var(--gradient-red) !important;
+    background-color: var(--gradient-red) !important;
+    background-image: var(--gradient-red) !important;
     box-shadow: 0 6px 24px rgba(139, 30, 30, 0.3) !important;
     transform: none !important;
     color: var(--white) !important;
+    transition: none !important;
     animation: none !important;
+  }
+
+  .btn-primary,
+  .contact-form-card .btn-primary {
+    transition: none !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
 }
 
