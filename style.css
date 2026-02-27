@@ -427,6 +427,7 @@ ul {
   color: var(--cream);
   letter-spacing: 1.5px;
   font-style: italic;
+  white-space: nowrap;
 }
 
 /* Nav Links */
@@ -1485,7 +1486,34 @@ footer p {
 /* =========================================================================
    RESPONSIVE
    ========================================================================= */
+@media (max-width: 1150px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-right {
+    gap: 24px;
+  }
+
+  .nav-social {
+    padding-left: 18px;
+  }
+
+  .logo-bottom {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  .nav-links a {
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+  }
+
+  .btn-nav {
+    padding: 8px 16px !important;
+  }
+
   .split-layout {
     grid-template-columns: 1fr;
     gap: 60px;
