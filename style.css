@@ -1681,9 +1681,15 @@ footer p {
   }
 
   .btn-primary:hover,
-  .contact-form-card .btn-primary:hover {
-    background: var(--gradient-red);
-    box-shadow: 0 6px 24px rgba(139, 30, 30, 0.3);
+  .btn-primary:active,
+  .btn-primary:focus,
+  .contact-form-card .btn-primary:hover,
+  .contact-form-card .btn-primary:active,
+  .contact-form-card .btn-primary:focus {
+    background: var(--gradient-red) !important;
+    box-shadow: 0 6px 24px rgba(139, 30, 30, 0.3) !important;
+    transform: none !important;
+    color: var(--white) !important;
   }
 }
 
