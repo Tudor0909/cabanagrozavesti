@@ -1680,16 +1680,23 @@ footer p {
     transform: none !important;
   }
 
-  .btn-primary:hover,
+  .btn-primary,
+  .contact-form-card .btn-primary {
+    transition: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
   .btn-primary:active,
   .btn-primary:focus,
-  .contact-form-card .btn-primary:hover,
+  .btn-primary:hover,
   .contact-form-card .btn-primary:active,
-  .contact-form-card .btn-primary:focus {
+  .contact-form-card .btn-primary:focus,
+  .contact-form-card .btn-primary:hover {
     background: var(--gradient-red) !important;
     box-shadow: 0 6px 24px rgba(139, 30, 30, 0.3) !important;
     transform: none !important;
     color: var(--white) !important;
+    animation: none !important;
   }
 }
 
