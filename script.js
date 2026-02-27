@@ -16,11 +16,19 @@ const CONFIG = {
 
 class LaConstantaApp {
     constructor() {
+        this.initTouchDetection();
         this.initLoader();
         this.initMobileMenu();
         this.initScrollEffects();
         this.initLightbox();
         this.initFormValidation();
+    }
+
+    // 0. Disable Hover on Touch Devices (Fixes iOS/Android sticky buttons)
+    initTouchDetection() {
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            document.documentElement.classList.add('is-touch-device');
+        }
     }
 
     // 1. Loader Removal

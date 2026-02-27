@@ -306,6 +306,17 @@ ul {
   }
 }
 
+/* Hard kill for touch devices detected via JavaScript */
+.is-touch-device .btn-primary::before {
+  display: none !important;
+}
+
+.is-touch-device .btn-primary:active,
+.is-touch-device .btn-primary:focus {
+  background: var(--gradient-red) !important;
+  color: var(--white) !important;
+}
+
 .full-width {
   width: 100%;
   text-align: center;
